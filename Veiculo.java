@@ -1,3 +1,6 @@
+/**
+ * @author zkd
+ */
 public class Veiculo {
     private String nomeModelo;
     private String nomeMarca;
@@ -5,11 +8,9 @@ public class Veiculo {
     private int anoFabricacao;
     private int anoModelo;
 
-
     public String getNomeModelo() {
         return nomeModelo;
     }
-
     public void setNomeModelo(String nomeModelo) {
         this.nomeModelo = nomeModelo;
     }
@@ -46,6 +47,9 @@ public class Veiculo {
         this.anoModelo = anoModelo;
     }
 
+    /**
+     * Esse método retorna todas as informações de forma mais legivel para o usuário
+     */
     public void getInformations(){
         System.out.println("****************************");
         System.out.println("Modelo: " + getNomeModelo());
